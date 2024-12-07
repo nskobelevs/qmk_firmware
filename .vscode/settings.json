@@ -7,7 +7,20 @@
         "**/.build": true,
         "**/*.hex": true,
         "**/*.bin": true,
-        "**/*.uf2": true
+        "**/*.uf2": true,
+        "keyboards/keychron/k*/": true,
+        "keyboards/keychron/v*/": true,
+        "keyboards/keychron/q*_max/": true,
+        "keyboards/keychron/q1_pro/": true,
+        "keyboards/keychron/q2_pro/": true,
+        "keyboards/keychron/q3_pro/iso_*": true,
+        "keyboards/keychron/q3_pro/jis_*": true,
+        "keyboards/keychron/q3_pro/ansi_encoder/": true,
+        "keyboards/keychron/q4_pro/": true,
+        "keyboards/keychron/q5_pro/": true,
+        "keyboards/keychron/q6_pro/": true,
+        "keyboards/keychron/q8_pro/": true,
+        "keyboards/keychron/q1*_pro/": true,
     },
     "files.associations": {
         "*.h": "c",
@@ -30,5 +43,7 @@
     },
     "clangd.arguments": [
         "--header-insertion=never"
-    ]
+    ],
+    "editor.inlayHints.enabled": "off",
+    "editor.formatOnSave": false
 }

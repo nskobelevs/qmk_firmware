@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         NS_TLG_CAPS_MO,  KC_LCTL,  KC_LOPT,  KC_LCMD,                                KC_SPC,                                 KC_RCMD,  KC_ROPT,  MO(NS_FN), KC_RCTL,  KC_LEFT,  KC_DOWN,  KC_RIGHT),
 
     [NS_FN] = LAYOUT_ansi_92(
-        _______,  _______,            KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10,  KC_F11,  KC_F12,  _______,  _______,  DB_TOGG,
+        RGB_TOG,  _______,            KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10,  KC_F11,  KC_F12,  _______,  _______,  DB_TOGG,
                   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,    _______,  _______,  _______,  _______,
         BT_HST1,  _______,  _______,  _______,  LSFT(KC_9),  LSFT(KC_0),  KC_MINS,  KC_EQL,  LSFT(KC_RBRC),  KC_UP,  LSFT(KC_SLSH), _______,  _______,  _______,    _______,  _______,  _______,  _______,
         BT_HST2,  NS_CAPS_MO  ,  _______, KC_LOPT,  KC_LCMD,  KC_BSPC, KC_ENT,  LSFT(KC_LBRC),  KC_LEFT  ,  KC_DOWN,  KC_RIGHT,  KC_LSFT, LSFT(KC_QUOT),              _______,
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [BASE] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)},
-    [NS_FN]   = { ENCODER_CCW_CW(_______, _______)},
+    [NS_FN]   = { ENCODER_CCW_CW(RGB_VAI, RGB_VAD)},
     [NS_FN2] = { ENCODER_CCW_CW(_______, _______)},
     [LAYER4]   = { ENCODER_CCW_CW(_______, _______)},
 };

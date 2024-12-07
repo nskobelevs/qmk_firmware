@@ -22,6 +22,7 @@
 #include "bluetooth_config.h"
 #include "config.h"
 #include "rtc_timer.h"
+#include "factory_test.h"
 
 #if defined(LED_MATRIX_ENABLE) || defined(RGB_MATRIX_ENABLE)
 #    ifdef LED_MATRIX_ENABLE
@@ -512,6 +513,8 @@ bool LED_INDICATORS_KB(void) {
     if (!LED_INDICATORS_USER()) {
         return false;
     }
+
+    if (!rgb_matrix_indicators_factory_test()) return false;
 
     if (get_transport() == TRANSPORT_BLUETOOTH) {
         /* Prevent backlight flash caused by key activities */
